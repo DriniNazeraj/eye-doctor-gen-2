@@ -20,24 +20,9 @@ function HeadingBlock({ light = false }: { light?: boolean }) {
 function HomeSkeleton() {
   return (
     <div role="status" aria-busy="true" aria-label="Loading the page">
-      <section className="relative min-h-[88vh] bg-navy">
-        <div className="container-page flex min-h-[88vh] flex-col justify-center py-20">
-          <Bone className="h-14 w-full max-w-xl bg-white/25 md:h-16" />
-          <Bone className="mt-5 h-5 w-full max-w-xl bg-white/15" />
-          <Bone className="mt-2 h-5 w-2/3 max-w-md bg-white/15" />
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Bone className="h-12 w-48 rounded-full bg-white/30" />
-            <Bone className="h-12 w-44 rounded-full bg-white/15" />
-          </div>
-          <div className="mt-8 flex flex-wrap gap-2">
-            <Bone className="h-9 w-36 rounded-full bg-white/15" />
-            <Bone className="h-9 w-52 rounded-full bg-white/15" />
-            <Bone className="h-9 w-48 rounded-full bg-white/15" />
-          </div>
-        </div>
-      </section>
+      <section className="h-[calc(100svh-7rem)] min-h-[24rem] bg-navy/10" />
 
-      <section className="relative z-10 -mt-16 md:-mt-24">
+      <section className="bg-cream py-16 md:py-20">
         <div className="container-page grid gap-4 md:grid-cols-3">
           {Array.from({ length: 3 }, (_, index) => (
             <div key={index} className="space-y-3 rounded-2xl bg-white p-6 shadow-card">

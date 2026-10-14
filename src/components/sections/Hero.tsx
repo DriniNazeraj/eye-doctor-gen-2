@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 
 import { formatAddress, site } from "../../config/site.ts"
 import { homeCopy, labels } from "../../data/content.ts"
-import { hoursSummary } from "../../data/hours.ts"
 import { media } from "../../data/media.ts"
 import { Button } from "../ui/button.tsx"
 import { BackgroundVideo } from "../common/VideoFrame.tsx"
@@ -10,28 +9,10 @@ import { HoursList } from "../common/HoursList.tsx"
 
 export function Hero() {
   return (
-    <section className="relative isolate min-h-[88vh] overflow-hidden bg-navy text-white">
-      <BackgroundVideo media={media.heroVideo} />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/55 to-navy/20" />
-      <div className="container-page relative flex min-h-[88vh] flex-col justify-center py-20">
-        <h1 className="max-w-xl text-5xl leading-tight text-white md:text-6xl">{homeCopy.hero.title}</h1>
-        <p className="mt-5 max-w-xl text-lg leading-8 text-white/85">{homeCopy.hero.subtitle}</p>
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <Button asChild size="lg" variant="white">
-            <Link to="/book">{labels.bookSentence}</Link>
-          </Button>
-          <Button asChild size="lg" variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white hover:text-navy">
-            <Link to="/services">{labels.exploreServices}</Link>
-          </Button>
-        </div>
-        <ul className="mt-8 flex flex-wrap gap-2">
-          {homeCopy.hero.chips.map((chip) => (
-            <li key={chip} className="rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm">
-              {chip}
-            </li>
-          ))}
-        </ul>
-        <p className="mt-6 text-xs text-white/70">{hoursSummary}</p>
+    <section className="relative isolate h-[calc(100svh-7rem)] min-h-[24rem] overflow-hidden bg-neutral-200" aria-label={homeCopy.hero.title}>
+      <h1 className="sr-only">{homeCopy.hero.title}</h1>
+      <div className="absolute inset-0 grayscale">
+        <BackgroundVideo media={media.heroVideo} />
       </div>
     </section>
   )
@@ -39,7 +20,7 @@ export function Hero() {
 
 export function InfoCards() {
   return (
-    <section className="relative z-10 -mt-16 md:-mt-24" aria-label={homeCopy.info.hoursTitle}>
+    <section className="bg-cream py-16 md:py-20" aria-label={homeCopy.info.hoursTitle}>
       <div className="container-page grid gap-4 md:grid-cols-3">
         <article className="rounded-2xl bg-white p-6 shadow-card">
           <h2 className="text-xl">{homeCopy.info.hoursTitle}</h2>

@@ -1,5 +1,5 @@
 import { Eye, Menu } from "lucide-react"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 
 import { site } from "../../config/site.ts"
@@ -9,39 +9,24 @@ import { Button } from "../ui/button.tsx"
 import { Sheet, SheetContent } from "../ui/sheet.tsx"
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8)
-    onScroll()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
-
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-40 border-b border-transparent",
-        scrolled && "border-line bg-cream shadow-card",
-      )}
-    >
-      <div className={cn("container-page flex items-center justify-between gap-4", scrolled ? "h-16" : "h-20")}>
-        <Link to="/" className="flex items-center gap-3">
-          <span className="grid size-10 place-items-center rounded-full bg-mint text-navy">
-            <Eye aria-hidden="true" className="size-5" strokeWidth={1.75} />
-          </span>
-          <span className="font-serif text-lg leading-tight text-navy md:text-xl">{site.name}</span>
+    <header className="border-b border-black/5 bg-cream">
+      <div className="mx-auto flex h-[4.5rem] w-[min(1240px,calc(100%-2.5rem))] items-center justify-between gap-6">
+        <Link to="/" className="flex shrink-0 items-center gap-2.5 text-[#1a1a1a]">
+          <Eye aria-hidden="true" className="size-7" strokeWidth={1.75} />
+          <span className="text-[1.35rem] leading-none font-medium tracking-tight">{site.name}</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
           {mainNav.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
               end={item.to === "/"}
               className={({ isActive }) =>
-                cn("text-sm font-medium text-navy hover:text-teal", isActive && "text-teal")
+                cn("text-[15px] font-normal text-[#2c2c2c] hover:text-black", isActive && "font-medium text-black")
               }
             >
               {item.label}
@@ -50,12 +35,12 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild className="hidden sm:inline-flex">
+          <Button asChild variant="navy" className="hidden sm:inline-flex">
             <Link to="/book">{labels.book}</Link>
           </Button>
           <button
             type="button"
-            className="grid size-11 place-items-center rounded-full text-navy hover:bg-mint lg:hidden"
+            className="grid size-11 place-items-center text-navy lg:hidden"
             aria-label={labels.openMenu}
             onClick={() => setOpen(true)}
           >
@@ -74,14 +59,17 @@ export function Header() {
                 end={item.to === "/"}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  cn("rounded-xl px-3 py-3 text-base font-medium text-navy hover:bg-mint", isActive && "bg-mint text-teal")
+                  cn(
+                    "rounded-md px-3 py-3 text-base font-normal text-[#2c2c2c] hover:bg-white",
+                    isActive && "bg-white font-medium text-black",
+                  )
                 }
               >
                 {item.label}
               </NavLink>
             ))}
           </nav>
-          <Button asChild>
+          <Button asChild variant="navy">
             <Link to="/book" onClick={() => setOpen(false)}>
               {labels.book}
             </Link>

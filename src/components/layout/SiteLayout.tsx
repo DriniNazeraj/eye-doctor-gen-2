@@ -28,8 +28,10 @@ export function SiteLayout() {
         {labels.skip}
       </a>
       <ClinicJsonLd />
-      <TopBar />
-      <Header />
+      <div className="sticky top-0 z-40">
+        <TopBar />
+        <Header />
+      </div>
       <main id="main">
         <Suspense fallback={<PageFallback />}>
           <Outlet />

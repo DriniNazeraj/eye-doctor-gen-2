@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Clearview Eye Clinic">
+  <rect width="64" height="64" rx="16" fill="#0B2545"/>
+  <path d="M8 32c8-10 14-14 24-14s16 4 24 14c-8 10-14 14-24 14S16 42 8 32z" fill="none" stroke="#E6F4F1" stroke-width="3"/>
+  <circle cx="32" cy="32" r="7" fill="#13838F"/>
+  <circle cx="32" cy="32" r="3" fill="#FAFAF7"/>
+</svg>

@@ -26,22 +26,22 @@ export const homeCopy = {
   hero: {
     title: "Clear vision, expert care.",
     subtitle:
-      "Consultant-led eye care in London, with time to examine properly and explain what we find.",
-    chips: ["Consultant-led", "Latest diagnostic imaging", "Same-week appointments"],
+      "A consultant ophthalmologist examines your eyes, explains what they find, and agrees the next step with you before you leave.",
+    chips: ["A named consultant", "Scans on the same visit", "Same-week appointments"],
   },
   info: {
     hoursTitle: "Opening hours",
     appointmentsTitle: "Appointments",
     appointmentsBody:
-      "New and returning patients can request a time online. We aim to offer same-week appointments when the diary allows.",
+      "Choose a service, a doctor and a day on the booking form. When the diary allows, we offer a time in the same week.",
     contactTitle: "Contact",
   },
   about: {
     eyebrow: "The clinic",
-    title: "Consultant care, explained clearly",
+    title: "What happens at your visit",
     paragraphs: [
-      "Clearview Eye Clinic is a consultant-led practice in central London. The team covers medical retina, uveitis, paediatric eye care, oculoplastics, glaucoma and cataract surgery.",
-      "You see a named ophthalmologist, not a rota of unfamiliar faces. Examinations are unhurried, imaging can often be done on the same visit, and you leave with a plan written in language you can share with your family or optometrist.",
+      "You see one named ophthalmologist. The clinic covers medical retina, uveitis, children’s eyes, eyelid surgery, glaucoma and cataract surgery.",
+      "We ask about your sight and your health, check your vision and eye pressure, then examine the eyes. If a scan is needed, it is usually done in the same building. You leave with a written plan you can share with your family or optometrist.",
     ],
     tourButton: "Play the clinic tour",
     badges: [
@@ -59,7 +59,7 @@ export const homeCopy = {
     eyebrow: "Services",
     title: "Care for the whole family",
     intro:
-      "From a first eye examination to surgery and children's appointments, every service is led by a consultant.",
+      "For adults and children. Open a service to see who it is for, what we do in the room, and the fee. Then book a time.",
     all: "View all services",
   },
   faq: {
@@ -70,19 +70,19 @@ export const homeCopy = {
   },
   videos: {
     eyebrow: "See what to expect",
-    title: "A look at the visit, before you arrive",
-    intro: "Short demo clips. They are stock footage, not recordings of this clinic.",
+    title: "Before you arrive",
+    intro: "Short clips of a first visit, cataract surgery and a child’s eye test. They are stock films, not recordings of this clinic.",
     demoNote: "Demo footage — replace with the clinic's own films before launch.",
   },
   doctors: {
     eyebrow: "Our doctors",
     title: "The consultants you will see",
-    intro: "Two placeholder profiles so the layout is ready for the real team.",
+    intro: "These two consultants are fictional, so the page is ready for the real team. The photographs are stock portraits.",
     all: "Meet the team",
   },
   reviews: {
     eyebrow: "Patient stories",
-    title: "What a visit can feel like",
+    title: "What patients have said",
   },
   location: {
     eyebrow: "Find us",
@@ -92,8 +92,8 @@ export const homeCopy = {
     mapTitle: "Map showing 24 Harley Street, London",
   },
   cta: {
-    title: "Ready to book your eye examination?",
-    body: "Tell us the service you need and a preferred day. This demo confirms on screen only.",
+    title: "Book your eye examination",
+    body: "Choose a service and a preferred day. It takes a few minutes. This demonstration confirms on screen and does not send your details.",
   },
 }
 
@@ -233,7 +233,7 @@ export const cookieCopy = {
 
 export const footerCopy = {
   blurb:
-    "A consultant-led private eye clinic in central London. Calm appointments, clear explanations, and care for adults and children.",
+    "A private eye clinic on Harley Street. You see a consultant, we explain the findings in plain English, and you leave with a written plan.",
   quickLinks: "Quick links",
   services: "Services",
   contact: "Contact",

@@ -22,8 +22,8 @@ function CountUp({ stat }: { stat: Stat }) {
         observer.disconnect()
         const start = performance.now()
         const tick = (now: number) => {
-          const progress = Math.min(1, (now - start) / 1200)
-          const eased = 1 - (1 - progress) ** 3
+          const progress = Math.min(1, (now - start) / 2400)
+          const eased = 1 - (1 - progress) ** 2
           setDisplay(stat.value * eased)
           if (progress < 1) frame = requestAnimationFrame(tick)
         }
@@ -50,7 +50,7 @@ function CountUp({ stat }: { stat: Stat }) {
 
 export function StatsBand() {
   return (
-    <section className="bg-navy py-16 text-white">
+    <section className="bg-navy py-20 text-white">
       <div className="container-page">
         <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {stats.map((stat) => (

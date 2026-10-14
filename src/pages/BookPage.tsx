@@ -8,7 +8,7 @@ export default function BookPage() {
     <>
       <Seo title={pageCopy.book.title} description={pageCopy.book.description} path="/book" />
       <PageHero eyebrow={bookingCopy.eyebrow} title={bookingCopy.title} intro={bookingCopy.intro} />
-      <div className="container-page max-w-3xl py-14">
+      <div className="container-page max-w-3xl py-20">
         <BookingForm />
       </div>
     </>

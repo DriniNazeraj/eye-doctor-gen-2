@@ -102,7 +102,7 @@ export function CarouselPrevious({ className }: { className?: string }) {
       disabled={!canScrollPrev}
       aria-label={labels.previousReview}
     >
-      <ChevronLeft aria-hidden="true" />
+      <ChevronLeft aria-hidden="true" className="size-5" strokeWidth={1.75} />
     </button>
   )
 }
@@ -120,7 +120,7 @@ export function CarouselNext({ className }: { className?: string }) {
       disabled={!canScrollNext}
       aria-label={labels.nextReview}
     >
-      <ChevronRight aria-hidden="true" />
+      <ChevronRight aria-hidden="true" className="size-5" strokeWidth={1.75} />
     </button>
   )
 }

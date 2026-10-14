@@ -5,7 +5,7 @@ import { HoursList } from "../common/HoursList.tsx"
 
 export function LocationSection() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-24">
       <div className="container-page grid gap-8 lg:grid-cols-2">
         <div>
           <SectionHeading eyebrow={homeCopy.location.eyebrow} title={homeCopy.location.title} />

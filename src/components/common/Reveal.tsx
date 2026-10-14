@@ -15,10 +15,10 @@ export function Reveal({
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-40px" }}
-      transition={{ duration: 0.45, delay, ease: "easeOut" }}
+      transition={{ duration: 0.4, delay, ease: "easeOut" }}
     >
       {children}
     </motion.div>
@@ -41,7 +41,7 @@ export function SectionHeading({
   return (
     <div className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
       {eyebrow ? (
-        <p className={light ? "text-sm font-semibold text-gold" : "text-sm font-semibold text-teal"}>
+        <p className={light ? "text-sm font-semibold text-gold" : "text-sm font-semibold text-navy"}>
           {eyebrow}
         </p>
       ) : null}

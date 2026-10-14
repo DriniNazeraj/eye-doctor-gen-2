@@ -35,7 +35,7 @@ export function AccordionTrigger({
         {...props}
       >
         {children}
-        <ChevronDown className="size-4 shrink-0 transition-transform group-data-[state=open]:rotate-180" aria-hidden="true" />
+        <ChevronDown className="size-5 shrink-0 transition-transform group-data-[state=open]:rotate-180" strokeWidth={1.75} aria-hidden="true" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )

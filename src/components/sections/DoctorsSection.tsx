@@ -8,7 +8,7 @@ import { Button } from "../ui/button.tsx"
 
 export function DoctorsSection({ showHeading = true }: { showHeading?: boolean }) {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-24">
       <div className="container-page">
         {showHeading ? (
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -39,9 +39,9 @@ export function DoctorsSection({ showHeading = true }: { showHeading?: boolean }
                 </figure>
                 <div>
                   <h3 className="text-2xl">{doctor.name}</h3>
-                  <p className="text-sm text-teal">{doctor.postNominals}</p>
+                  <p className="text-sm text-navy">{doctor.postNominals}</p>
                   <p className="mt-1 text-sm font-medium text-navy">{doctor.role}</p>
-                  <p className="mt-3 text-sm leading-6 text-muted">{doctor.shortBio}</p>
+                  <p className="mt-3 leading-7 text-muted">{doctor.shortBio}</p>
                   <ul className="mt-4 flex flex-wrap gap-2">
                     {doctor.specialties.map((specialty) => (
                       <li key={specialty}>

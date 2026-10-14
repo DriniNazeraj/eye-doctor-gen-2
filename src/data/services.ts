@@ -19,7 +19,7 @@ export const services: Service[] = [
     slug: "eye-consultation",
     title: "Eye Consultation",
     shortDescription:
-      "A thorough consultant examination, with time to talk through symptoms, glasses and the next step.",
+      "For a change in sight, discomfort, or a second opinion. The consultant examines your eyes and explains the next step.",
     icon: "eye",
     price: "From £250",
     priceNote: "Indicative placeholder fee. Confirm the fee before launch.",
@@ -43,7 +43,7 @@ export const services: Service[] = [
     slug: "paediatric-ophthalmology",
     title: "Paediatric Ophthalmology",
     shortDescription:
-      "Calm, child-friendly appointments for squint, lazy eye, focusing problems and myopia control.",
+      "For babies and children with a squint, lazy eye, or trouble seeing the board. Appointments are paced so a child can take part.",
     icon: "baby",
     price: "From £280",
     priceNote: "Indicative placeholder fee. Confirm the fee before launch.",
@@ -67,7 +67,7 @@ export const services: Service[] = [
     slug: "diagnostic-imaging",
     title: "Diagnostic Imaging",
     shortDescription:
-      "OCT scans and visual field tests on site, so many answers are available at the same visit.",
+      "For glaucoma checks and macular disease. An OCT scan and visual field test can usually be done on the same visit.",
     icon: "scan",
     price: "From £150",
     priceNote: "Indicative placeholder fee. Confirm the fee before launch.",
@@ -91,7 +91,7 @@ export const services: Service[] = [
     slug: "medical-retina",
     title: "Medical Retina",
     shortDescription:
-      "Consultant care for macular degeneration, diabetic eye disease, vein occlusions and uveitis.",
+      "For distorted central vision, diabetes, or inflammation inside the eye. We examine the retina and agree a monitoring plan.",
     icon: "retina",
     price: "From £295",
     priceNote: "Indicative placeholder fee. Confirm the fee before launch.",
@@ -115,7 +115,7 @@ export const services: Service[] = [
     slug: "cataract-surgery",
     title: "Cataract Surgery",
     shortDescription:
-      "Consultant-led lens replacement when a cloudy lens is getting in the way of reading, driving or work.",
+      "For adults whose cloudy lens is affecting reading, driving or work. Surgery is usually a day case under local anaesthetic.",
     icon: "cataract",
     price: "From £2,950 per eye",
     priceNote: "Indicative placeholder fee. Confirm the fee before launch.",
@@ -139,7 +139,7 @@ export const services: Service[] = [
     slug: "glaucoma-care",
     title: "Glaucoma Care",
     shortDescription:
-      "Monitoring and treatment aimed at protecting the optic nerve and preserving sight.",
+      "For raised eye pressure, a glaucoma diagnosis, or a strong family history. We measure pressure and watch the optic nerve over time.",
     icon: "glaucoma",
     price: "From £275",
     priceNote: "Indicative placeholder fee. Confirm the fee before launch.",
@@ -163,7 +163,7 @@ export const services: Service[] = [
     slug: "oculoplastic-eyelid-surgery",
     title: "Oculoplastic & Cosmetic Eyelid Surgery",
     shortDescription:
-      "Eyelid surgery for watering, lumps, drooping lids and carefully considered cosmetic change.",
+      "For drooping lids, lumps, watering eyes, or cosmetic eyelid surgery. We examine the lid before suggesting any procedure.",
     icon: "lid",
     price: "Consultation from £450",
     priceNote: "Indicative placeholder fee. Surgery is quoted after examination. Confirm before launch.",
@@ -187,7 +187,7 @@ export const services: Service[] = [
     slug: "contact-lenses-optical",
     title: "Contact Lenses & Optical",
     shortDescription:
-      "Contact lens fitting and advice on glasses, including complex prescriptions after surgery.",
+      "For a complex prescription or lenses after surgery. We fit the lens, show you how to handle it, and review the eye afterwards.",
     icon: "optical",
     price: "From £120",
     priceNote: "Indicative placeholder fee. Confirm the fee before launch.",

@@ -24,7 +24,7 @@ export function CookieBanner({ visible, onDismiss }: { visible: boolean; onDismi
   if (!visible) return null
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-line bg-white/95 p-4 shadow-2xl backdrop-blur">
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-line bg-white p-4 shadow-card">
       <div className="container-page flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="font-semibold text-navy">{cookieCopy.title}</p>

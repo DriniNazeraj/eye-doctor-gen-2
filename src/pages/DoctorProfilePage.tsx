@@ -21,7 +21,7 @@ export default function DoctorProfilePage() {
         path={`/doctors/${doctor.slug}`}
       />
       <PageHero eyebrow={doctor.role} title={doctor.name} intro={doctor.postNominals} />
-      <article className="container-page grid gap-10 py-16 lg:grid-cols-[280px_1fr]">
+      <article className="container-page grid gap-10 py-20 lg:grid-cols-[280px_1fr]">
         <figure>
           <img
             src={doctor.photo}
@@ -35,7 +35,7 @@ export default function DoctorProfilePage() {
           </figcaption>
         </figure>
         <div>
-          <p className="text-sm font-semibold text-teal">{doctor.experience}</p>
+          <p className="text-sm font-semibold text-navy">{doctor.experience}</p>
           <p className="mt-1 text-sm text-muted">{doctor.training}</p>
           <div className="mt-6 space-y-4 leading-7 text-muted">
             {doctor.paragraphs.map((paragraph) => (

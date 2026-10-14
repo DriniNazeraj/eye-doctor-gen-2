@@ -20,9 +20,9 @@ export default function ServiceDetailPage() {
     <>
       <Seo title={service.title} description={service.summary} path={`/services/${service.slug}`} />
       <PageHero eyebrow={service.price} title={service.title} intro={service.summary} />
-      <article className="container-page grid gap-10 py-16 lg:grid-cols-[1.4fr_0.8fr]">
+      <article className="container-page grid gap-10 py-20 lg:grid-cols-[1.4fr_0.8fr]">
         <div>
-          <span className="grid size-14 place-items-center rounded-2xl bg-mint text-teal">
+          <span className="grid size-12 place-items-center rounded-2xl bg-mint text-navy">
             <ServiceIcon name={service.icon} />
           </span>
           <div className="mt-6 space-y-4 leading-7 text-muted">

@@ -29,7 +29,7 @@ function VideoCard({ item }: { item: MediaItem }) {
           />
           <span className="absolute inset-0 grid place-items-center bg-navy/25">
             <span className="grid size-14 place-items-center rounded-full bg-white text-teal">
-              <Play className="ml-0.5 fill-teal" aria-hidden="true" />
+              <Play className="ml-0.5 size-5 fill-teal" strokeWidth={1.75} aria-hidden="true" />
             </span>
           </span>
         </span>
@@ -73,7 +73,7 @@ function VideoCard({ item }: { item: MediaItem }) {
 
 export function VideoStrip() {
   return (
-    <section className="bg-mint/60 py-20 md:py-28">
+    <section className="bg-mint/60 py-20 md:py-24">
       <div className="container-page">
         <SectionHeading
           eyebrow={homeCopy.videos.eyebrow}

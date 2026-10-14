@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section className="relative isolate min-h-[88vh] overflow-hidden bg-navy text-white">
       <BackgroundVideo media={media.heroVideo} />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/75 to-navy/35" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/55 to-navy/20" />
       <div className="container-page relative flex min-h-[88vh] flex-col justify-center py-20">
         <h1 className="max-w-xl text-5xl leading-tight text-white md:text-6xl">{homeCopy.hero.title}</h1>
         <p className="mt-5 max-w-xl text-lg leading-8 text-white/85">{homeCopy.hero.subtitle}</p>
@@ -49,7 +49,7 @@ export function InfoCards() {
         </article>
         <article className="rounded-2xl bg-white p-6 shadow-card">
           <h2 className="text-xl">{homeCopy.info.appointmentsTitle}</h2>
-          <p className="mt-4 text-sm leading-6 text-muted">{homeCopy.info.appointmentsBody}</p>
+          <p className="mt-4 leading-7 text-muted">{homeCopy.info.appointmentsBody}</p>
           <Button asChild className="mt-5">
             <Link to="/book">{labels.bookSentence}</Link>
           </Button>

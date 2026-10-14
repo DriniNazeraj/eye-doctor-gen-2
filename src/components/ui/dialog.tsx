@@ -27,7 +27,7 @@ export function DialogContent({
       <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-navy/70" />
       <DialogPrimitive.Content
         className={cn(
-          "fixed top-1/2 left-1/2 z-50 w-[min(100%-2rem,52rem)] -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-cream p-4 shadow-2xl md:p-6",
+          "fixed top-1/2 left-1/2 z-50 w-[min(100%-2rem,52rem)] -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-cream p-4 shadow-card md:p-6",
           className,
         )}
       >
@@ -37,7 +37,7 @@ export function DialogContent({
             className="grid size-11 shrink-0 place-items-center rounded-full text-navy hover:bg-mint"
             aria-label={labels.closeDialog}
           >
-            <X aria-hidden="true" />
+            <X aria-hidden="true" className="size-5" strokeWidth={1.75} />
           </DialogPrimitive.Close>
         </div>
         {children}

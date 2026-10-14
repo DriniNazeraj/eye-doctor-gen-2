@@ -10,7 +10,7 @@ import { HoursList } from "../common/HoursList.tsx"
 function SocialIcon({ label }: { label: string }) {
   if (label === "Instagram") {
     return (
-      <svg viewBox="0 0 24 24" className="size-5" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8">
+      <svg viewBox="0 0 24 24" className="size-5" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.75">
         <rect x="4" y="4" width="16" height="16" rx="4" />
         <circle cx="12" cy="12" r="3.5" />
         <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
@@ -38,7 +38,7 @@ export function Footer() {
         <div>
           <Link to="/" className="flex items-center gap-3">
             <span className="grid size-10 place-items-center rounded-full bg-white/10">
-              <Eye aria-hidden="true" />
+              <Eye aria-hidden="true" className="size-5" strokeWidth={1.75} />
             </span>
             <span className="font-serif text-xl text-white">{site.name}</span>
           </Link>

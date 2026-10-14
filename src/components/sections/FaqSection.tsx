@@ -10,7 +10,7 @@ export function FaqSection({ linked = true }: { linked?: boolean }) {
   const columns = [faqs.slice(0, midpoint), faqs.slice(midpoint)]
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-24">
       <div className="container-page">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading eyebrow={homeCopy.faq.eyebrow} title={homeCopy.faq.title} intro={homeCopy.faq.intro} />

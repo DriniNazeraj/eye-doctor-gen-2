@@ -10,7 +10,7 @@ export default function ContactPage() {
     <>
       <Seo title={pageCopy.contact.title} description={pageCopy.contact.description} path="/contact" />
       <PageHero title={pageCopy.contact.title} intro={contactCopy.intro} />
-      <div className="container-page grid gap-8 py-14 lg:grid-cols-[1fr_0.9fr]">
+      <div className="container-page grid gap-8 py-20 lg:grid-cols-[1fr_0.9fr]">
         <ContactForm />
         <div className="space-y-6">
           <address className="rounded-2xl bg-white p-6 text-sm leading-6 text-muted not-italic shadow-card">

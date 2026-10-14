@@ -50,7 +50,7 @@ function HomeSkeleton() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-20 md:py-24">
         <div className="container-page grid items-center gap-10 lg:grid-cols-2">
           <div className="space-y-4">
             <HeadingBlock />
@@ -61,7 +61,7 @@ function HomeSkeleton() {
         </div>
       </section>
 
-      <section className="bg-white py-20 md:py-28">
+      <section className="bg-white py-20 md:py-24">
         <div className="container-page">
           <HeadingBlock />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -77,7 +77,7 @@ function HomeSkeleton() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-20 md:py-24">
         <div className="container-page">
           <HeadingBlock />
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
@@ -88,7 +88,7 @@ function HomeSkeleton() {
         </div>
       </section>
 
-      <section className="bg-white py-20 md:py-28">
+      <section className="bg-white py-20 md:py-24">
         <div className="container-page">
           <HeadingBlock />
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -99,7 +99,7 @@ function HomeSkeleton() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-20 md:py-24">
         <div className="container-page">
           <HeadingBlock />
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -122,7 +122,7 @@ function HomeSkeleton() {
         </div>
       </section>
 
-      <section className="bg-white py-20 md:py-28">
+      <section className="bg-white py-20 md:py-24">
         <div className="container-page">
           <HeadingBlock />
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -138,7 +138,7 @@ function HomeSkeleton() {
         </div>
       </section>
 
-      <section className="bg-navy py-16">
+      <section className="bg-navy py-20">
         <div className="container-page grid grid-cols-2 gap-8 md:grid-cols-4">
           {Array.from({ length: 4 }, (_, index) => (
             <div key={index} className="space-y-3">
@@ -149,7 +149,7 @@ function HomeSkeleton() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-20 md:py-24">
         <div className="container-page grid gap-8 lg:grid-cols-2">
           <div className="space-y-4">
             <HeadingBlock />

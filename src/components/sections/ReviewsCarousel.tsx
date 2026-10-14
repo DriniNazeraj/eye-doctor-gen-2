@@ -13,7 +13,8 @@ function Stars({ rating }: { rating: number }) {
       {Array.from({ length: 5 }, (_, index) => (
         <Star
           key={index}
-          className={index < rating ? "size-4 fill-gold text-gold" : "size-4 text-line"}
+          className={index < rating ? "size-5 fill-gold text-gold" : "size-5 text-line"}
+          strokeWidth={1.75}
           aria-hidden="true"
         />
       ))}
@@ -25,7 +26,7 @@ export function ReviewsCarousel() {
   const autoplay = useRef(Autoplay({ delay: 5200, stopOnMouseEnter: true, stopOnInteraction: false }))
 
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="bg-white py-20 md:py-24">
       <div className="container-page">
         <SectionHeading eyebrow={homeCopy.reviews.eyebrow} title={homeCopy.reviews.title} />
         <Carousel
@@ -39,7 +40,7 @@ export function ReviewsCarousel() {
                 <figure className="flex h-full flex-col rounded-2xl border border-line bg-cream p-6">
                   <Stars rating={review.rating} />
                   <blockquote className="mt-4 flex-1 text-base leading-7 text-navy">“{review.quote}”</blockquote>
-                  <figcaption className="mt-4 text-sm font-semibold text-teal">{review.name}</figcaption>
+                  <figcaption className="mt-4 text-sm font-semibold text-navy">{review.name}</figcaption>
                 </figure>
               </CarouselItem>
             ))}

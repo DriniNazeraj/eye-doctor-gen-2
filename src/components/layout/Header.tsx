@@ -23,13 +23,13 @@ export function Header() {
     <header
       className={cn(
         "sticky top-0 z-40 border-b border-transparent",
-        scrolled && "border-line bg-cream/85 shadow-sm backdrop-blur-md",
+        scrolled && "border-line bg-cream shadow-card",
       )}
     >
       <div className={cn("container-page flex items-center justify-between gap-4", scrolled ? "h-16" : "h-20")}>
         <Link to="/" className="flex items-center gap-3">
-          <span className="grid size-10 place-items-center rounded-full bg-mint text-teal">
-            <Eye aria-hidden="true" />
+          <span className="grid size-10 place-items-center rounded-full bg-mint text-navy">
+            <Eye aria-hidden="true" className="size-5" strokeWidth={1.75} />
           </span>
           <span className="font-serif text-lg leading-tight text-navy md:text-xl">{site.name}</span>
         </Link>
@@ -59,7 +59,7 @@ export function Header() {
             aria-label={labels.openMenu}
             onClick={() => setOpen(true)}
           >
-            <Menu aria-hidden="true" />
+            <Menu aria-hidden="true" className="size-5" strokeWidth={1.75} />
           </button>
         </div>
       </div>

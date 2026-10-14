@@ -5,7 +5,7 @@ import { TourVideo } from "../common/VideoFrame.tsx"
 
 export function About() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-24">
       <div className="container-page grid items-center gap-10 lg:grid-cols-2">
         <Reveal>
           <SectionHeading eyebrow={homeCopy.about.eyebrow} title={homeCopy.about.title} />
@@ -18,7 +18,7 @@ export function About() {
             {homeCopy.about.badges.map((badge) => (
               <li key={badge.label} className="rounded-2xl bg-mint px-4 py-3">
                 <p className="font-semibold text-navy">{badge.label}</p>
-                <p className="text-xs text-teal-dark">{badge.note}</p>
+                <p className="text-sm text-muted">{badge.note}</p>
               </li>
             ))}
           </ul>

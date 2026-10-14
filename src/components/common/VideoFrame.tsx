@@ -7,7 +7,7 @@ import type { MediaItem } from "../../data/media.ts"
 
 export function VideoFallback({ label }: { label: string }) {
   return (
-    <div className="flex h-full min-h-48 w-full items-center justify-center bg-gradient-to-br from-navy via-navy-soft to-teal px-6 text-center">
+    <div className="flex h-full min-h-48 w-full items-center justify-center bg-navy px-6 text-center">
       <p className="font-serif text-2xl text-white">{label}</p>
     </div>
   )
@@ -85,8 +85,8 @@ export function TourVideo({ media }: { media: MediaItem }) {
               aria-label={`${labels.playVideo}: ${media.title}`}
               onClick={() => setPlaying(true)}
             >
-              <span className="grid size-16 place-items-center rounded-full bg-white text-teal shadow-lg">
-                <Play className="ml-1 size-7 fill-teal" aria-hidden="true" />
+              <span className="grid size-14 place-items-center rounded-full bg-white text-teal shadow-card">
+                <Play className="ml-0.5 size-5 fill-teal" strokeWidth={1.75} aria-hidden="true" />
               </span>
               <span className="sr-only">{homeCopy.about.tourButton}</span>
             </button>

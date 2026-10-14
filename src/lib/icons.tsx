@@ -31,5 +31,5 @@ export function ServiceIcon({
   className?: string
 }) {
   const Icon: LucideIcon = iconMap[name]
-  return <Icon className={className} aria-hidden="true" />
+  return <Icon className={className ?? "size-5"} strokeWidth={1.75} aria-hidden="true" />
 }
